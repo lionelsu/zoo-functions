@@ -7,5 +7,4 @@ const getSpeciesByIds = (...ids) => {
       .includes(specie.id));
 };
 
-console.log();
 module.exports = getSpeciesByIds;
