@@ -31,7 +31,7 @@ describe('Cobertura de testes para a função handlerElephants', () => {
   });
 
   it('5 - deve retronar a média da idade dos elefantes caso o parâmetro passado seja "averageAge"', () => {
-    expect(handlerElephants('averageAge')).toBeCloseTo(10.5, 1);
+    expect(handlerElephants('averageAge')).toBe(10.5);
   });
 
   it('6 - deve retornar a localização dos elefantes caso o parâmetro passado seja "location"', () => {
