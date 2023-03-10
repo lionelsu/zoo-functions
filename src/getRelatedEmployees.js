@@ -1,11 +1,24 @@
 const data = require('../data/zoo_data');
 
 const isManager = (id) => {
-  // seu código aqui
+  const { employees } = data;
+  return employees
+    .some(({ managers }) => managers.includes(id));
 };
 
 const getRelatedEmployees = (managerId) => {
-  // seu código aqui
+  if (!isManager(managerId)) {
+    throw new Error('O id inserido não é de uma pessoa colaboradora gerente!');
+  }
+
+  // return employees.filter(({ managers }) => managers.includes(managerId)).map(({ firstName, lastName }) => `${firstName} ${lastName}`);
+  const { employees } = data;
+  return employees
+    .flatMap(({ managers, firstName, lastName }) =>
+      (managers.includes(managerId)
+        ? `${firstName} ${lastName}`
+        : []));
 };
+// O uso do flatMap aqui é para combinar o filter com o map onde, enquanto o flatmap transforma cada objeto em um array, o "filter" interno é usado para remover os elementos vazios.
 
 module.exports = { isManager, getRelatedEmployees };
