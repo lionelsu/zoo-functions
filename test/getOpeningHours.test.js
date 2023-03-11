@@ -32,13 +32,9 @@ describe('Cobertura de testes para a função getOpeningHours', () => {
     ['Wednesday', '99:09-PM', 'The hour must be between 0 and 12'],
   ])('Sequência: %# - deve retornar a string informando se o Zoo está aberto, fechado ou lançar um erro dependendo dos parâmetros passados, ex: "%s", "%s" deve retornar "%s"', (param1, param2, expected) => {
     try {
-      getOpeningHours(param1, param2);
+      expect(getOpeningHours(param1, param2)).toBe(expected);
     } catch (err) {
-      if (err) {
-        expect(() => getOpeningHours(param1, param2)).toThrow(expected);
-      } else {
-        expect(getOpeningHours(param1, param2)).toBe(expected);
-      }
+      expect(() => getOpeningHours(param1, param2)).toThrow(expected);
     }
   });
 });
