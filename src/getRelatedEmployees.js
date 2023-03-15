@@ -5,6 +5,7 @@ const isManager = (id) => {
   return employees
     .some(({ managers }) => managers.includes(id));
 };
+// Super simples, encontra algum manager que tenha o id do parâmetro incluído.
 
 const getRelatedEmployees = (managerId) => {
   if (!isManager(managerId)) {

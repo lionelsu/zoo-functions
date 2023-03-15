@@ -13,6 +13,7 @@ describe('Cobertura de testes para a função getOpeningHours', () => {
     };
     expect(getOpeningHours()).toEqual(defaultObj);
   });
+  // O it é alto explicativo aqui.
 
   const zooClosed = 'The zoo is closed';
   const zooOpened = 'The zoo is open';
@@ -37,4 +38,6 @@ describe('Cobertura de testes para a função getOpeningHours', () => {
       expect(() => getOpeningHours(param1, param2)).toThrow(expected);
     }
   });
+
+  // Usando o test.each para testar cada condição e evitar tanta repetição de código, usando o try catch para capturar o erro e lançar no segundo teste, econômizando milhares de linhas de código.
 });

@@ -9,5 +9,5 @@ const getAnimalsOlderThan = (animal, age) => {
     .every((resident) => resident.age >= age);
   return olderAnimals;
 };
-
+// Função super simples, find e every são usados para receber as condições true ou false dependendo dos parâmetros passados, testa se todos os animais possuem a idade especificada e retorna verdadeiro ou falso.
 module.exports = getAnimalsOlderThan;
