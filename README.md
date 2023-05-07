@@ -1,10 +1,10 @@
-# :construction: README em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto.
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+# ZOO-FUNCTIONS
+
+![GitHub repo size](https://img.shields.io/github/repo-size/lionelsu/zoo-functions?style=for-the-badge)
+![GitHub language count](https://img.shields.io/github/languages/count/lionelsu/zoo-functions?style=for-the-badge)
+
+Este projeto foi construído em um ambiente acadêmico e tem a intenção de atender a propósitos educacionais.
+
+# Habilidades desenvolvidas:
+
+* O Zoo Functions usa **JavaScript ES6**
