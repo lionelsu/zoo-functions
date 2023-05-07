@@ -10,8 +10,7 @@ Este projeto foi construído em um ambiente acadêmico e tem a intenção de ate
 
 Uso de **HOFs** do **JavaScript ES6**
 Todas as funções são executadas no contexto local, mas visam simular consulta em **API**
-para extrair informações do Zoológico.
-Práticas de **TDD** e **BDD**
+para extrair informações do Zoológico. Práticas de **TDD** e **BDD** foram utilizadas para mater a qualidade do código.
 
 # Tecnologias e práticas
 
